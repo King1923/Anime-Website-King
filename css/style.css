@@ -1,0 +1,341 @@
+* {
+    font-family: Impact, Condensed, sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+p {
+    font-family: Comic Sans MS, Condensed;
+    line-height: 30px;
+}
+
+#title {
+    background-color: black;
+    background-image: url("../images/background_header.gif");
+}
+
+b {
+    color: rgb(17, 219, 138);
+    font-size: 22px;
+    font-family: Comic Sans MS;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+#carouselExampleAutoplaying span {
+    border: 7px solid rgb(0, 255, 255);
+    height: 75px;
+    width: 75px;
+}
+
+.RandomAnimeQuote {
+    font-family: Comic Sans MS;
+    margin-top: 20px;
+}
+
+.content {
+    width: 1050px;
+    height: 1180px;
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+
+.AU_Introduction p,
+h5 {
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.AU_Introduction u {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    color: rgb(14, 186, 120)
+}
+
+.AU_Introduction h5 {
+    letter-spacing: 2px;
+}
+
+body.dark-mode {
+    color: #ccc;
+    background-color: #333;
+}
+
+#AU_Intro hr {
+    height: 3px;
+    width: 50%;
+    border-top: 7px solid rgb(0, 38, 255);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#AU_Intro p {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container {
+    width: 1050px;
+    height: 1280px;
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+
+#Animes {
+    width: 1050px;
+    height: 1480px;
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+
+#Animes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#Animes table caption {
+    text-align: center;
+}
+
+/*For table data */
+th {
+    background-color: #ff8000;
+    border: 5px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+td {
+    border: 5px solid #000000;
+    padding: 8px;
+}
+
+/* Background color for middle row */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hovering effect that changes color */
+tr:hover {
+    background-color: #000000;
+}
+/* Container for data in Top Animes of All Time Page */
+.container-TopAnimes {
+    width: 1000px;
+    height: 4280px;
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+/* Container for data in Trending Animes Page */
+#trending {
+    width: 1250px;
+    height: 4000px;
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+/* Container for data in Favourite Anime Page */
+.container-FavouriteAnime {
+    width: 1050px;
+    height: 950px;
+    /* 320+320+320+320-10 */
+    border: 5px solid;
+    border-color: #1A00FF;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: wheat;
+}
+/* border for images in Top Animes container */
+.container-TopAnimes img {
+    border: 3px solid;
+}
+/* No border for images in Top Animes page */
+#Top_Animes_OAT img {
+    border: none;
+}
+/* No border for Anime Logo image */
+#Anime_Logo img {
+    border: none;
+}
+/* Padding for Paragraph in Top Animes container */
+.container-TopAnimes p {
+    padding: 15px;
+}
+/* Adjusting height and width for image at title */
+#title img {
+    height: 100px;
+    width: 300px;
+}
+/* Color for bootstrap navigation menu */
+.container-fluid {
+    background-color: rgb(102, 220, 249);
+}
+/* Styling for nav bar items */
+.nav-item {
+    padding-left: 17px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+/* Styling for nav bar items */
+.nav-link-active {
+    color: rgb(32, 149, 0);
+    font-size: 20px;
+}
+
+.merch {
+    border: 3px solid;
+    display: inline-block;
+    padding: 10px;
+}
+
+.animes {
+    border: 3px solid;
+    display: inline-block;
+    padding: 5px;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+#trending img {
+    border: 5px solid;
+    display: inline-block;
+    padding: 10px;
+}
+
+#trending iframe {
+    border: 5px solid;
+}
+
+#trending hr {
+    height: 3px;
+    width: 50%;
+    border-top: 7px solid rgb(0, 213, 255);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.trending_image img {
+    border: 3px solid;
+    color: rgb(0, 4, 255);
+}
+
+fieldset {
+    font-family: Comic Sans MS;
+}
+
+fieldset label,
+option {
+    font-family: Comic Sans MS;
+}
+
+fieldset u {
+    font-size: 33px;
+    padding-left: 100px;
+}
+
+.Footer {
+    width: 100%;
+    padding: 50px;
+    background-color: rgba(11, 6, 174, 0.464);
+    display: flex;
+}
+
+.Footer div {
+    text-align: center;
+}
+
+.column_1 {
+    margin-left: 35%;
+}
+
+.column_2 {
+    flex-grow: 2;
+}
+
+.Footer div h5 {
+    margin-bottom: 20px;
+}
+
+.column_1 a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: rgb(13, 0, 255);
+}
+
+.column_1 a:hover {
+    color: rgb(0, 255, 255);
+    text-decoration: underline;
+}
+
+.column_2 a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.social-icons {
+    margin-right: 400px;
+}
+
+.social-icons img {
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    width: 20%;
+    font-size: 22px;
+
+}
+
+.column_3 iframe {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

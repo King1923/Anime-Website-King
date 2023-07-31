@@ -1,0 +1,120 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Form Processor</title>
+<style>
+article {
+		font-family:Comic Sans MS;
+		line-height:2em;
+		font-size:1.5em;
+		padding-top: 10px;
+		background-color:#008cff;
+		margin: auto;
+		width:920px;
+		height: 750px;
+		text-align: center;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		border: 5px solid black;
+}
+body{
+	background-image: url("../Anime_Form_Wallpaper.jpg");
+}
+
+ h1 { text-align:center }
+ 
+.blank {
+	font-weight:900;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+var para=new Array();
+var chapter,color,gender;
+
+function setColor(c){
+	var allBlanks=document.getElementsByClassName("blank");
+	  
+		for (i=0; i<allBlanks.length; i++)
+			allBlanks[i].style.color=c;
+}
+
+function setGender(){
+     if (chapter>12){
+		if (gender=="boy") 
+			document.getElementById("gender").innerHTML="male";
+		else
+			document.getElementById("gender").innerHTML="female";
+	}			
+}
+
+
+</script>
+<body>
+<article>
+<h1>Your Anime Preferences</h1>
+<p>Your Anime Starting Date <span id="date" class="blank"></span>, Your Preferred Anime Chapters amount is: <span id="chapter" class="blank"></span> chapters Your Gender:<span id="gender" class="blank"></span> 
+<br>You enjoy this anime: <span id="anime" class="blank"></span> Your Favourite ability: <span id="Ability" class="blank"></span> Your Favourite Anime genre: <span id="Genre" class="blank"></span>. 
+</p>
+<p>Your Favourite Anime Character: <span id="Favourite_Character" class="blank"></span> Your Favourite Anime Rating: <span id="Favourite_Anime_Rating" class="blank"></span>
+Your favourite anime website <span id="website" class="blank"></span> </p>
+<button onclick="history.back()">Go Back</button>
+</article>
+<script>
+for (var i=0; i < formArray.length; ++i) {
+	
+	para=formArray[i].split("=");
+	
+	switch (para[0]) {
+		case "date":
+					  dd=new Date(para[1]);
+					  document.getElementById("date").innerHTML=dd.toDateString();
+					  break;
+	    case "chapter": document.getElementById("chapter").innerHTML=para[1];
+					chapter=parseInt(para[1]);
+					break;
+		case "gender":
+					document.getElementById("gender").innerHTML=para[1];
+					gender=para[1];
+					break;
+		case "color": 
+					color=para[1];
+					break;
+		case "animes":	
+					document.getElementById("animes").innerHTML=para[1];
+					break;
+		case "Ability":
+					document.getElementById("Ability").innerHTML=para[1];
+					break;
+		case "Genre":
+					document.getElementById("Genre").innerHTML=para[1];
+					break;
+		case "Favourite_Character":
+					document.getElementById("Favourite_Character").innerHTML=para[1];
+					break;
+		case "Favourite_Anime_Rating":
+					document.getElementById("Favourite_Anime_Rating").innerHTML=para[1];
+					break;
+		case "website":
+					document.getElementById("website").innerHTML=para[1];
+					break;
+	
+    }
+	
+}
+setGender();
+setColor(color);
+
+</script>
+</body>
+</html>
